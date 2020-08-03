@@ -15,7 +15,7 @@ git clone https://github.com/oitkg/learn.git
 ```
 git add 01_Github.md
 git commit -m "01_github技巧"
-git pull --rebase origin master
+git pull --rebase origin master  #常用于多人协作，防止误改
 git push -u origin master
 ```
 
