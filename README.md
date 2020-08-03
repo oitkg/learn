@@ -33,16 +33,27 @@ git remote add origin https://github.com/oitkg/learn.git  #将本地仓库与远
 git push -u origin master  #将本地仓库的项目上传到远程仓库
 ```
 
-### 3.Git工具将本地项目上传到远程仓库
+### 3.总结：使用Git工具将本地项目上传到远程仓库方法
 
 ```
 git init  #将项目进行初始化，变成git可管理的本地仓库
 git add .  #将文件添加到本地仓库中，其中'.'是将文件夹中所有的文件添加，也可进行指定文件添加
 git commit -m '某次提交工作的描述'  #将所有文件（指定文件）提交到本地仓库，字符串的内容为此次提交工作的描述
 git remote add origin https://xxxxxxxxxxx  #将本地仓库与远程仓库进行关联
-git pull --rebase origin master  #将远程仓库和本地仓库进行合并校验，有问题会提示
+git pull --rebase origin master  #将远程仓库和本地仓库进行合并校验，有错误会提示
 git push -u origin master  #将本地仓库的项目上传到远程仓库
 ```
+
+**注意**：如果第一次后在进行修改的话，不需要对项目进行初始化以及将远程仓库和本地仓库进行关联。
+
+```
+git add xxxx.xx( .)  #将文件添加到本地仓库，其中'xxxx.xx'是修改的项目；' .'是将文件夹中所有的文件添加
+git commit -m '某次提交工作的描述'  #将指定文件（所有文件）提交到本地仓库，字符串的内容为此次提交工作的描述
+git pull --rebase origin master  #将本地仓库和远程仓库进行合并校验，有错误会提示
+git push -u origin master  #将本地仓库的项目进行上传
+```
+
+
 
 ### 4.注意
 
