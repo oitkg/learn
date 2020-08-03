@@ -18,9 +18,9 @@
 
 ```
 echo "# learn" >> README.md  #创建一个README.md,并将# learn字符串保存在README.md中
-git init  #将项目初始化，变成git可以可管理的本地仓库
-git add README.md  #将README.md添加到本地仓库
-git commit -m "first commit"  #将README.md提交到本地仓库，字符串的内容为此次提交工作的描述
+git init  #将项目初始化，变成git可以可管理的本地仓库（将文件夹变成仓库文件夹）
+git add README.md  #将README.md添加到本地仓库（为本地文件添加一个缓存区，下一步工作的准备）
+git commit -m "first commit"  #将README.md打包提交到本地仓库（为打包文件添加另一个缓存区），字符串的内容为此次提交工作的描述
 git remote add origin https://github.com/oitkg/learn.git  #将本地仓库与远程仓库进行关联
 git push -u origin master  #将本地仓库的项目上传到远程仓库
                 
