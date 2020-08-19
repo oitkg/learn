@@ -1,0 +1,79 @@
+class NumberCount:
+    """数字的加减乘除运算"""
+
+    def ShowMenu(self):
+        print("*" * 50)
+        print("欢迎使用【马骏牌计算器】v1.0")
+        print("")
+        print("1.加法运算")
+        print("2.减法运算")
+        print("3.乘法运算")
+        print("4.除法运算")
+        print("5.自定义运算")
+        print("6.退出系统")
+        print("*" * 50)
+        return ""
+
+    def NumberAdd(self):
+        """加法运算"""
+        print("*" * 50)
+        print("加法运算")
+        # 1.提示用户输入第一个数字
+        first_number = float(input("请输入第一个数字："))
+        # 2.提示用户输入第二个数字
+        second_number = float(input("请输入第二个数字："))
+        # 3.求和运算
+        add_result = first_number + second_number
+        # 4.结果显示
+        print(add_result)
+        return ""
+
+    def NumberSubtraction(self):
+        """减法运算"""
+        print("*" * 50)
+        print("减法运算")
+        # 1.提示用户输入第一个数字
+        first_number = float(input("请输入第一个数字："))
+        # 2.提示用户输入第二个数字
+        second_number = float(input("请输入第二个数字："))
+        # 3.求差运算
+        subtraction_result = first_number - second_number
+        # 4.结果显示
+        print(subtraction_result)
+        return ""
+
+    def NumberMultiplication(self):
+        """乘法运算"""
+        print("*" * 50)
+        print("乘法运算")
+        # 1.提示用户输入第一个数字
+        first_number = float(input("请输入第一个数字："))
+        # 2.提示用户输入第二个数字
+        second_number = float(input("请输入第二个数字："))
+        # 3.求积运算
+        multiplication_result = first_number * second_number
+        # 结果显示
+        print(multiplication_result)
+        return ""
+
+    def NumberDivider(self):
+        """除法运算"""
+        print("*" * 50)
+        print("除法运算")
+        # 1.提示用户输入第一个数字
+        first_number = float(input("请输入第一个数字："))
+        # 2.提示用户输入第二个数字
+        second_number = float(input("请输入第二个数字："))
+        # 3.求商运算
+        divider_result = first_number / second_number
+        # 4.显示结果
+        print(divider_result)
+        return ""
+
+
+a = NumberCount()
+print(a.ShowMenu())
+print(a.NumberAdd())
+print(a.NumberSubtraction())
+print(a.NumberMultiplication())
+print(a.NumberDivider())
